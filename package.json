@@ -1,0 +1,53 @@
+{
+  "name": "@selcouth-digital/react-native-action-sheet",
+  "description": "React Native Action Sheet with hooks",
+  "version": "0.1.0",
+  "author": "Simon Wierzchowski <simon.w@selcouth.digital>",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start -- --reset-cache",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest"
+  },
+  "keywords": [
+    "react-native-action-sheet",
+    "react native action sheet",
+    "actionsheet",
+    "action sheet",
+    "react-native",
+    "custom-action-sheet"
+  ],
+  "main": "lib/index.js",
+  "repository": {
+    "url": "https://github.com/SelcouthDigital/react-native-action-sheet.git",
+    "type": "git"
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/SelcouthDigital/react-native-action-sheet/issues"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-native": "^0.59.5",
+    "react-native-reanimated": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/runtime": "^7.4.4",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1",
+    "metro-react-native-babel-preset": "^0.54.0",
+    "react-test-renderer": "16.8.3"
+  }
+}
