@@ -6,10 +6,6 @@ import { ActionSheet } from '../lib'
 const Simple = () => {
   const [visible, setVisible] = useState(false)
 
-  const setShowActionSheet = val => {
-    setVisible(val)
-  }
-
   const options = [
     {
       title: 'Option 1',
@@ -24,8 +20,8 @@ const Simple = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>React Native - Action Sheet</Text>
-      <Button onPress={() => setShowActionSheet(true)} title="Open ActionSheet" />
-      <ActionSheet onDismiss={() => setShowActionSheet(false)} options={options} visible={visible} />
+      <Button onPress={() => setVisible(true)} title="Open ActionSheet" />
+      <ActionSheet onDismiss={() => setVisible(false)} options={options} visible={visible} />
     </View>
   )
 }
