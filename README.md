@@ -69,8 +69,6 @@ export default Example
 * Add icons and subtitles to options
 * Style Android
 
-___
-
 ## PEER Dependencies
 
 #### Reanimated
