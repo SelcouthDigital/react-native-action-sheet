@@ -2,9 +2,11 @@
 
 React Native - Custom Action Sheet (with hooks).
 
+<img src="https://github.com/SelcouthDigital/react-native-action-sheet/blob/master/examples/react-native-action-sheet.gif?raw=true" width="250">
+
 ### Notes
 
-  React Native Action Sheet cannot get dismissed programatically, so we've decided to use React Native Modal and imitate Action Sheet behaviour with it to enable dismissable option.
+React Native Action Sheet cannot get dismissed programatically, so we've decided to use React Native Modal and imitate Action Sheet behaviour with it to enable dismissable option.
 
 ## Install
 
@@ -65,6 +67,7 @@ export default Example
 * Add Gesture Handler to resize action sheet (when it's too long for half a screen)
 * Unit Tests
 * Add icons and subtitles to options
+* Style Android
 
 ___
 
