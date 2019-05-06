@@ -71,6 +71,8 @@ export default Example
 
 ___
 
+## PEER Dependencies
+
 #### Reanimated
 
 We use [Ract Native Reanimated](https://github.com/kmagiera/react-native-reanimated) library for animating! Special thanks to @[kmagiera](https://github.com/kmagiera) for providing it!
