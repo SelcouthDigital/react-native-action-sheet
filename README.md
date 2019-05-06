@@ -14,7 +14,7 @@ React Native - Custom Action Sheet (with hooks).
 
 Simple example:
 
-```
+```javascript
 import React, { useState } from 'react'
 import { ActionSheet } from '@selcouth-digital/react-native-action-sheet'
 
