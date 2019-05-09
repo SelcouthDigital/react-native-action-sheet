@@ -1,0 +1,8 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#6638f0",
+    "statusBar.foreground": "#ffffff",
+    "statusBarItem.hoverBackground": "#6638f0"
+  }
+}
