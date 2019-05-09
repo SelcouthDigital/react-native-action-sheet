@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import { Button, StyleSheet, Text, View } from 'react-native'
 
-import { ActionSheet } from '../lib'
+import ActionSheet from '../lib'
 
 const Simple = () => {
   const [visible, setVisible] = useState(false)
@@ -18,11 +18,13 @@ const Simple = () => {
   ]
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.welcome}>React Native - Action Sheet</Text>
-      <Button onPress={() => setVisible(true)} title="Open ActionSheet" />
+    <Fragment>
+      <View style={styles.container}>
+        <Text style={styles.welcome}>React Native - Action Sheet</Text>
+        <Button onPress={() => setVisible(true)} title="Open ActionSheet" />
+      </View>
       <ActionSheet onDismiss={() => setVisible(false)} options={options} visible={visible} />
-    </View>
+    </Fragment>
   )
 }
 
