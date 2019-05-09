@@ -18,7 +18,7 @@ Simple example:
 
 ```javascript
 import React, { Fragment, useState } from 'react'
-import { ActionSheet } from '@selcouth-digital/react-native-action-sheet'
+import ActionSheet from '@selcouth-digital/react-native-action-sheet'
 
 const Example = () => {
   const [showActionSheet, setShowActionSheet] = useState(false)
