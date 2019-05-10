@@ -1,7 +1,7 @@
 {
   "name": "@selcouth-digital/react-native-action-sheet",
   "description": "React Native Action Sheet with hooks",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "author": "Simon Wierzchowski <simon.w@selcouth.digital>",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start -- --reset-cache",
