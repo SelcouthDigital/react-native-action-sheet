@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useRef } from 'react'
 import { Button, StyleSheet, Text, View } from 'react-native'
 
 import ActionSheet from '../lib'
@@ -9,13 +9,21 @@ const Simple = () => {
   const options = [
     {
       title: 'Option 1',
-      onPress: e => console.log(e)
+      onPress: (e, callback) => {
+        console.log(e)
+        callback()
+      }
     },
     {
       title: 'Option 2',
-      onPress: e => console.log(e)
+      onPress: (e, callback) => {
+        console.log(e)
+        callback()
+      }
     }
   ]
+
+  const CancelButton = callback => <Button onPress={callback} title="Cancel" />
 
   return (
     <Fragment>
@@ -23,7 +31,7 @@ const Simple = () => {
         <Text style={styles.welcome}>React Native - Action Sheet</Text>
         <Button onPress={() => setVisible(true)} title="Open ActionSheet" />
       </View>
-      <ActionSheet onDismiss={() => setVisible(false)} options={options} visible={visible} />
+      <ActionSheet CancelButton={CancelButton} onDismiss={() => setVisible(false)} options={options} visible={visible} />
     </Fragment>
   )
 }
